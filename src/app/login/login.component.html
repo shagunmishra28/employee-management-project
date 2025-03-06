@@ -1,0 +1,48 @@
+<div class="login-container">
+  <div class="login-card">
+    <!-- Logo / Icon -->
+    <div class="logo-container">
+      <!-- Replace with your actual logo path -->
+      <img src="assets/logo.png" alt="ebo.ai" class="logo" />
+    </div>
+
+    <!-- Project Name -->
+    <h2>Welcome,Xebo.ai</h2>
+
+    <!-- Login Form -->
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <!-- Username Field -->
+      <div class="input-group">
+        <i class="material-icons">person</i>
+        <input
+          type="text"
+          placeholder="Username"
+          formControlName="username"
+        />
+      </div>
+
+      <!-- Password Field -->
+      <div class="input-group">
+        <i class="material-icons">lock</i>
+        <input
+          type="password"
+          placeholder="Password"
+          formControlName="password"
+        />
+      </div>
+
+      <!-- Error Message -->
+      <div *ngIf="errorMessage" class="error-message">
+        {{ errorMessage }}
+      </div>
+
+      <!-- Login Button -->
+      <button class="login-button" type="submit">Login</button>
+    </form>
+
+    <!-- Forgot Password / Sign Up Links -->
+    <div class="forgot-signup">
+      <a href="#">Forgot password?</a> or <a href="#">Sign up</a>
+    </div>
+  </div>
+</div>

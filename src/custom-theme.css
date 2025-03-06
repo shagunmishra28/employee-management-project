@@ -1,0 +1,53 @@
+/* Define custom CSS variables for theming */
+:root {
+  --app-primary-color: #3f51b5;  /* Indigo */
+  --app-accent-color: #e91e63;   /* Pink */
+  --app-warn-color: #f44336;     /* Red */
+  --app-toolbar-bg: var(--app-primary-color);
+  --app-button-bg: var(--app-accent-color);
+}
+
+/* Override Angular Material Toolbar style */
+.mat-toolbar {
+  background-color: var(--app-toolbar-bg) !important;
+  color: #fff !important;
+}
+
+/* Override Angular Material Raised Button style */
+.mat-raised-button {
+  background-color: var(--app-button-bg) !important;
+  color: #fff !important;
+  border-radius: 30px;
+  transition: background-color 0.3s;
+}
+.mat-raised-button:hover {
+  background-color: darken(var(--app-button-bg), 10%);
+}
+
+/* Style for Angular Material Card */
+.mat-card {
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Additional custom styles for a modern, appealing UI */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6b73ff, #000dff);
+  padding: 16px;
+}
+
+.login-card {
+  width: 350px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Example for input fields (if further customization is needed) */
+.mat-form-field {
+  width: 100%;
+  margin-bottom: 16px;
+}

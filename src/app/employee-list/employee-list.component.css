@@ -1,0 +1,10 @@
+.table-container {
+    padding: 1px;
+    overflow: auto;
+  }
+  
+  .table-row:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+    transition: background-color 0.2s;
+  }
+  

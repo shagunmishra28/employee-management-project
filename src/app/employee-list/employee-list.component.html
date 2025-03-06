@@ -1,0 +1,16 @@
+<div class="employee-list-container" fxLayout="row" fxLayoutGap="16px" fxLayoutWrap>
+  <mat-card class="employee-card" *ngFor="let employee of employees">
+    <mat-card-header>
+      <mat-card-title>{{ employee.firstName }} {{ employee.lastName }}</mat-card-title>
+      <mat-card-subtitle>{{ employee.division }}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <p><strong>Employee No:</strong> {{ employee.employeeNumber }}</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="accent" (click)="openEmployeeDetail(employee)">
+        <mat-icon>edit</mat-icon> Edit
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>

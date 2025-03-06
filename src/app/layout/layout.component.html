@@ -1,0 +1,16 @@
+<!-- layout.component.html -->
+<mat-sidenav-container class="layout-container">
+    <mat-sidenav mode="side" opened>
+      <mat-nav-list>
+        <a mat-list-item routerLink="/app/employees">EMPLOYEES LIST</a>
+        <!-- other nav items -->
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <mat-toolbar color="primary">Employee Management </mat-toolbar>
+      <div class="content">
+        <router-outlet></router-outlet>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  

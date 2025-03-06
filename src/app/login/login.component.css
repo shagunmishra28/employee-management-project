@@ -1,0 +1,103 @@
+/* Container that covers the entire viewport and centers the card */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f2f2f2; /* or use a gradient, e.g. linear-gradient(...) */
+  margin-left: 0; /* Adjust if you have a sidenav pushing content */
+}
+
+/* Card styling */
+.login-card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  width: 350px;
+  padding: 30px 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Logo container */
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+}
+
+/* Project name heading */
+h2 {
+  margin: 10px 0 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+/* Input group styling */
+.input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* Material icon within the input group */
+.input-group i.material-icons {
+  margin-right: 10px;
+  color: #888;
+}
+
+/* Inputs */
+.input-group input {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Error message style */
+.error-message {
+  color: #ff3f3f;
+  margin: 8px 0;
+}
+
+/* Login button */
+.login-button {
+  background-color: #00bfff;
+  color: #fff;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background 0.3s;
+}
+
+.login-button:hover {
+  background-color: #009fcf;
+}
+
+/* Forgot Password / Sign Up links */
+.forgot-signup {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.forgot-signup a {
+  color: #00bfff;
+  text-decoration: none;
+  margin: 0 3px;
+}

@@ -1,0 +1,25 @@
+<h2 mat-dialog-title>Edit Employee Details</h2>
+<mat-dialog-content>
+  <form [formGroup]="employeeForm">
+    <mat-form-field appearance="fill">
+      <mat-label>First Name</mat-label>
+      <input matInput formControlName="firstName">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Last Name</mat-label>
+      <input matInput formControlName="lastName">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Employee Number</mat-label>
+      <input matInput formControlName="employeeNumber">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Division</mat-label>
+      <input matInput formControlName="division">
+    </mat-form-field>
+  </form>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button (click)="onCancel()">Cancel</button>
+  <button mat-raised-button color="primary" (click)="onSave()">Save</button>
+</mat-dialog-actions>

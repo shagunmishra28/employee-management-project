@@ -1,0 +1,46 @@
+{
+  "employees": [
+    {
+      "id": "1",
+      "firstName": "SHAGUN MISHRA",
+      "lastName": "Mishra",
+      "employeeNumber": "EMP001",
+      "division": "angular intern c"
+    },
+    {
+      "id": "2",
+      "firstName": "vanshika ",
+      "lastName": "sikhri",
+      "employeeNumber": "EMP002",
+      "division": "H"
+    },
+    {
+      "id": "3",
+      "firstName": "HARSH GUPTA",
+      "lastName": "mishra",
+      "employeeNumber": "EMP001",
+      "division": "Sales"
+    },
+    {
+      "id": "4",
+      "firstName": "rajeev",
+      "lastName": "Doe",
+      "employeeNumber": "EMP001",
+      "division": "Sales"
+    },
+    {
+      "id": "5",
+      "firstName": "rahul",
+      "lastName": "Doe",
+      "employeeNumber": "EMP001",
+      "division": "Sales"
+    },
+    {
+      "id": "6",
+      "firstName": "John",
+      "lastName": "Doe",
+      "employeeNumber": "EMP001",
+      "division": "Sales"
+    }
+  ]
+}
