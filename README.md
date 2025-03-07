@@ -59,6 +59,7 @@ Ensure that the db.json file is located in the project root.
 Start JSON Server by running:
 
 json-server --watch db.json
+
 JSON Server will run at http://localhost:3000.
 
 Run the Angular Application:
