@@ -55,40 +55,7 @@ Install Dependencies:
 npm install
 Set Up and Run JSON Server:
 
-Ensure that the db.json file is located in the project root. An example db.json:
-
-
-{
-  "employees": [
-    {
-      "id": 1,
-      "firstName": "shagun",
-      "lastName": "mishra",
-      "employeeNumber": "EMP001",
-      "division": "Sales"
-    },
-    {
-      "id": 2,
-      "firstName": "Jane",
-      "lastName": "Smith",
-      "employeeNumber": "EMP002",
-      "division": "Marketing"
-    },
-    {
-      "id": 3,
-      "firstName": "Jane",
-      "lastName": "Smith",
-      "employeeNumber": "EMP002",
-      "division": "Marketing"
-    },{
-      "id": 4,
-      "firstName": "Jane",
-      "lastName": "Smith",
-      "employeeNumber": "EMP002",
-      "division": "Marketing"
-    }
-  ]
-}
+Ensure that the db.json file is located in the project root. 
 Start JSON Server by running:
 
 json-server --watch db.json
@@ -96,15 +63,13 @@ JSON Server will run at http://localhost:3000.
 
 Run the Angular Application:
 
-In another terminal, start the Angular app with:
+https://bucolic-banoffee-c3d278.netlify.app/
 
-ng serve
-The application will be available at http://localhost:4200.
 
 Usage
 1. Login:
 
-Navigate to http://localhost:4200.
+Navigate to application
 Use the demo credentials (for example, username: admin and password: admin123).
 (Credentials are validated via a simple AuthService implementation.)
 On successful login, you will be redirected to the Employee List interface.
